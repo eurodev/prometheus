@@ -1,5 +1,5 @@
 prometheus (0.13.1-1) unstable; urgency=low
 
-  * First debian package relase.
+  * First debian package release.
 
  -- Javier Carranza <javier.carranza@crononauta.com>  Wed, 15 Apr 2015 17:41:26 +0200
