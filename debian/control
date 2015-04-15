@@ -1,0 +1,21 @@
+Source: prometheus
+Section: universe/web
+Priority: optional
+Maintainer: Javier Carranza <javier.carranza@crononauta.com>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.4
+Homepage: http://prometheus.io/
+Vcs-Git: https://github.com/prometheus/prometheus.git
+Vcs-Browser: https://github.com/prometheus/prometheus
+
+Package: prometheus
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: An open-source service monitoring system and time series database
+ Prometheus is an open-source systems monitoring and alerting toolkit built at
+ SoundCloud. Since its  inception in 2012, it has become the standard for
+ instrumenting new services at SoundCloud and is seeing growing external usage
+ and contributions.
+ .
+ For a more elaborate overview, see also SoundCloud's blog post which announces
+ Prometheus.
