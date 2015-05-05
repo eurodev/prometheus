@@ -1,0 +1,99 @@
+ALERT sinMaletasBehatError
+    IF max({job="SinMaletas", type="scenario", sla="24x7"}) == 1
+    FOR 1m
+    WITH {
+        job="SinMaletas",
+        type="scenario"
+    }
+    SUMMARY "Check behat error in {{ $labels.job }}"
+    DESCRIPTION "An error ocurred in {{ $labels.job }} Behat scenario"
+
+ALERT oxfamIntermonBehatError
+    IF max({job="OxfamIntermon", type="scenario", sla="24x7"}) == 1
+    FOR 1m
+    WITH {
+        job="OxfamIntermon",
+        type="scenario"
+    }
+    SUMMARY "Check behat error in {{ $labels.job }}"
+    DESCRIPTION "An error ocurred in {{ $labels.job }} Behat scenario"
+
+ALERT aepedBehatError
+    IF max({job="AEPED", type="scenario", sla="24x7"}) == 1
+    FOR 1m
+    WITH {
+        job="AEPED",
+        type="scenario"
+    }
+    SUMMARY "Check behat error in {{ $labels.job }}"
+    DESCRIPTION "An error ocurred in {{ $labels.job }} Behat scenario"
+
+ALERT balclisBehatError
+    IF max({job="Balclis", type="scenario", sla="24x7"}) == 1
+    FOR 1m
+    WITH {
+        job="Balclis",
+        type="scenario"
+    }
+    SUMMARY "Check behat error in {{ $labels.job }}"
+    DESCRIPTION "An error ocurred in {{ $labels.job }} Behat scenario"
+
+ALERT bdigitalBehatError
+    IF max({job="BDigital", type="scenario", sla="24x7"}) == 1
+    FOR 1m
+    WITH {
+        job="BDigital",
+        type="scenario"
+    }
+    SUMMARY "Check behat error in {{ $labels.job }}"
+    DESCRIPTION "An error ocurred in {{ $labels.job }} Behat scenario"
+
+ALERT isdinBehatError
+    IF max({job="ISDIN", type="scenario", sla="24x7"}) == 1
+    FOR 1m
+    WITH {
+        job="ISDIN",
+        type="scenario"
+    }
+    SUMMARY "Check behat error in {{ $labels.job }}"
+    DESCRIPTION "An error ocurred in {{ $labels.job }} Behat scenario"
+
+ALERT petclicBehatError
+    IF max({job="Petclic", type="scenario", sla="24x7"}) == 1
+    FOR 1m
+    WITH {
+        job="Petclic",
+        type="scenario"
+    }
+    SUMMARY "Check behat error in {{ $labels.job }}"
+    DESCRIPTION "An error ocurred in {{ $labels.job }} Behat scenario"
+
+ALERT pontebusoBehatError
+    IF max({job="Pontebuso", type="scenario", sla="24x7"}) == 1
+    FOR 1m
+    WITH {
+        job="Pontebuso",
+        type="scenario"
+    }
+    SUMMARY "Check behat error in {{ $labels.job }}"
+    DESCRIPTION "An error ocurred in {{ $labels.job }} Behat scenario"
+
+ALERT talentclueBehatError
+    IF max({job="Talentclue", type="scenario", sla="24x7"}) == 1
+    FOR 1m
+    WITH {
+        job="Talentclue",
+        type="scenario"
+    }
+    SUMMARY "Check behat error in {{ $labels.job }}"
+    DESCRIPTION "An error ocurred in {{ $labels.job }} Behat scenario"
+
+ALERT yobaliaBehatError
+    IF max({job="Yobalia", type="scenario", sla="24x7"}) == 1
+    FOR 1m
+    WITH {
+        job="Yobalia",
+        type="scenario"
+    }
+    SUMMARY "Check behat error in {{ $labels.job }}"
+    DESCRIPTION "An error ocurred in {{ $labels.job }} Behat scenario"
