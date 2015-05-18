@@ -9,7 +9,11 @@
 
 override_dh_auto_install:
 	mkdir -p debian/prometheus/usr/bin/
+	mkdir -p debian/prometheus/etc/prometheus
+	mkdir -p debian/prometheus/var/log/prometheus
 	cp prometheus debian/prometheus/usr/bin/
+	cp debian/source/etc/prometheus.conf debian/prometheus/etc/prometheus
+	cp debian/source/etc/prometheus.rules debian/prometheus/etc/prometheus
 
 override_dh_clean:
 	dh_clean

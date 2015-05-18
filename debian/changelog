@@ -1,3 +1,9 @@
+prometheus (0.13.1-2) unstable; urgency=low
+
+  * Adds init.d script and config files.
+
+ -- Manuel Viera <manuel.viera@crononauta.com>  Wed, 29 Apr 2015 13:09:35 +0200
+
 prometheus (0.13.1-1) unstable; urgency=low
 
   * First debian package release.
