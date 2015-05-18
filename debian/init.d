@@ -27,7 +27,7 @@ SCRIPTNAME=/etc/init.d/$NAME
 # Read configuration variable file if it is present
 [ -r /etc/default/$NAME ] && . /etc/default/$NAME
 
-DAEMON_ARGS="-config.file=$CONFIGFILE -alertmanager.url=$ALERTMANAGER_URL"
+DAEMON_ARGS="-config.file=$CONFIGFILE -storage.local.path=/var/tmp/prometheus/metrics -log_dir=/var/log/prometheus -alertmanager.url=$ALERTMANAGER_URL"
 VERBOSE=$VERBOSE
 
 # Define LSB log_* functions.
